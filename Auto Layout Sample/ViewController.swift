@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSource {
     @IBOutlet weak var cardView: UIView!
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 1 // only one cell as of now
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -20,18 +20,9 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 300
+        return 300  // random table cell height
     }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-       self.createShadow()
-    }
-
-    func createShadow(){
-        
-    }
-    
+   
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
